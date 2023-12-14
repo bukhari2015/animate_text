@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @keyframes slideIn {
+      from {
+        transform: translateX(-100%);
+      }
+      to {
+        transform: translateX(0);
+      }
+    }
+
+    .animated-text {
+      display: inline-block;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: slideIn 1.5s ease-out;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="textContainer">
+    <span class="animated-text">Hello, World!</span>
+  </div>
+
+  <script>
+    // Function to trigger the animation
+    function animateText() {
+      var textContainer = document.getElementById('textContainer');
+      textContainer.innerHTML = '<span class="animated-text">Hello, Animated!</span>';
+    }
+
+    // Trigger the animation after a delay (e.g., 2 seconds)
+    setTimeout(animateText, 2000);
+  </script>
+
+</body>
+</html>
