@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .scrolling-image-container {
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .scrolling-image {
+      width: 100%;
+      animation: scrollImage 10s linear infinite;
+    }
+
+    @keyframes scrollImage {
+      from {
+        transform: translateX(100%);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="scrolling-image-container">
+    <img class="scrolling-image" src="car_image.jpg" alt="Car Image">
+  </div>
+
+</body>
+</html>
