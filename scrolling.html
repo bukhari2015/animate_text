@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @keyframes scrollText {
+      from {
+        transform: translateX(100%);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+    }
+
+    .scrolling-text-container {
+      white-space: nowrap;
+      overflow: hidden;
+      animation: scrollText 10s linear infinite;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="scrolling-text-container">
+    <span>Hello, this is scrolling text!</span>
+  </div>
+
+</body>
+</html>
